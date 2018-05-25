@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kebab</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function(){
+  	$(".home").click(function(){
+  		$(".pres").toggle(200);
+      $(".classic").toggleClass("gone");
+      $(".chef").toggleClass("gone");
+  	});
+  });
+
+  $(function(){
+  	$(".menu1").click(function(){
+  		$(".classic").toggle(200);
+      $(".chef").toggleClass("gone");
+      $(".pres").toggleClass("gone");
+  	});
+  });
+  $(function(){
+  	$(".menu2").click(function(){
+  		$(".chef").toggle(200);
+      $(".classic").toggleClass("gone");
+      $(".chef").toggleClass("gone");
+  	});
+  });
+  </script>
+  </body>
+</html>

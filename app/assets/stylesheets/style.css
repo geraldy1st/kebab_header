@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #EEE;
+  font-family: sans-serif;
+}
+h1{
+  text-align: center;
+  color: orange;
+}
+nav{
+  background: #111;
+  padding: 0;
+}
+nav ul{
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  width: 400px;
+  background-color: #999;
+}
+nav li{
+  display: inline;
+  padding: 15px;
+}
+nav li:hover{
+  cursor: pointer;
+}
+.content{
+  background-color: #999;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #EEE;
+  box-sizing: border-box;
+}
+
+.gone{
+  display: none;
+}
+.classic{
+  display: none;
+}
+.chef{
+  display: none;
+}
